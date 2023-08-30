@@ -1,0 +1,4 @@
+0821
+MonochromeCamera와 Camera를 번갈아 쓰는 경우, MonochromeCamera의 --set-ctrl=color_effects=1가 Camera에도 그대로 적용.
+v4l2-ctl -d /dev/video0 --set-ctrl=color_effects=0로 해결
+
