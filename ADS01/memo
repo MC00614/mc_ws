@@ -2,3 +2,26 @@
 MonochromeCamera와 Camera를 번갈아 쓰는 경우, MonochromeCamera의 --set-ctrl=color_effects=1가 Camera에도 그대로 적용.
 v4l2-ctl -d /dev/video0 --set-ctrl=color_effects=0로 해결
 
+* distortion
+1. ROI
+2. HSV Filter
+3. Gaussian Blur
+4. Canny Edge Detection
+5. Hough Line
+6. If statement for vertical line
+
+
+============================================================
+venv에 picamera 패키지 설치 -> 64비트에서 파이카메라 안되는거 알지? -> 삭제
+
+해상도 변경
+v4l2-ctl -d /dev/video0 --set-fmt-video=width=640,height=400
+
+Frame rate 변경
+v4l2-ctl --set-parm=30
+안댐 그냥 6으로 고정
+v4l2-ctl -d /dev/videoX -p 30
+이거도 안댐
+
+v4l2-ctl -d /dev/video0 --set-fmt-video=width=640,height=400,pixelformat=MJPG --set-parm 30
+성공~
