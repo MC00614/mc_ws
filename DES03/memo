@@ -1,6 +1,17 @@
 common api
 vsomeip
 
+<<<<<<< HEAD
+- install java
+sudo apt-get update
+sudo apt-get install openjdk-8-jdk
+java -version
+
+- install Boost
+git clone https://github.com/GENIVI/capicxx-someip-runtime.git
+
+git clone https://github.com/GENIVI/vsomeip.git
+=======
 라즈베리파이 1개
 vsomeip - dbus를 지우는게 아니고 이번 개발에 넣기
 vsomeip로 어플 개발해서 값 보내는거 부터
